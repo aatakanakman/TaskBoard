@@ -1,0 +1,11 @@
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\bin\Debug\TaskManagement.exe.config
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\bin\Debug\TaskManagement.exe
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\bin\Debug\TaskManagement.pdb
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.Properties.Resources.resources
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.exe
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.pdb
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.AddTask.resources
+C:\Users\USER\source\repos\TaskManagement\TaskManagement\obj\Debug\TaskManagement.TaskManagment.resources
