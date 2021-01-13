@@ -12,9 +12,14 @@ namespace TaskManagement
 {
     public partial class AddTask : Form
     {
+        public string proje_name { get; set; }
+
         database db = new database();
         Proje prj = new Proje();
         Task task = new Task();
+        Task task2 = new Task();
+        Task task3 = new Task();
+        Task task4 = new Task();
         public AddTask()
         {
             InitializeComponent();
@@ -38,16 +43,14 @@ namespace TaskManagement
 
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
+            
             task.proje_ad = txt_projeAd.Text; 
             if(Convert.ToString(timepicker.Value) == "" && txt_projeAd.Text == "")
             {
                 MessageBox.Show("Proje adı ve Tarih boş geçilemez");
-               
             }
             else
             {
-                
-
                 prj.ad = txt_projeAd.Text;
                 prj.tarih = Convert.ToString(timepicker.Value);
                 prj.aciklama = txt_aciklama.Text;
@@ -56,12 +59,34 @@ namespace TaskManagement
                 prj.gercekSure = txt_gerceksure.Text;
                 prj.userId = 1;
 
-                task.proje_ad = is1.Text;
+                task.proje_ad = txt_projeAd.Text;
+                task.name = is1.Text;
                 task.date = tarih1.Text;
                 task.desc = aciklama1.Text;
-                task.durumId = 1;
+                task.durumId = Convert.ToInt32(durum1.Text);
+
+                task2.proje_ad = txt_projeAd.Text;
+                task2.name = is2.Text;
+                task2.date = tarih2.Text;
+                task2.desc = aciklama2.Text;
+                task2.durumId = Convert.ToInt32(durum2.Text);
+
+                //task3.proje_ad = txt_projeAd.Text;
+                //task3.name = is3.Text;
+                //task3.date = tarih3.Text;
+                //task3.desc = aciklama3.Text;
+                //task3.durumId = Convert.ToInt32(durum3.Text);
+
+                //task4.proje_ad = txt_projeAd.Text;
+                //task4.name = is4.Text;
+                //task4.date = tarih4.Text;
+                //task4.desc = aciklama4.Text;
+                //task4.durumId = Convert.ToInt32(durum4.Text);
 
                 db.taskEkle(task);
+                db.taskEkle2(task2);
+                //db.taskEkle3(task3);
+                //db.taskEkle4(task4);
 
                 db.projeEkle(prj);
 

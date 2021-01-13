@@ -8,6 +8,8 @@ namespace TaskManagement
 {
     class Proje
     {
+        public int  proje_id { get; set; }
+
         public string ad { get; set; }
         public string tarih { get; set; }
         public int userId { get; set; }

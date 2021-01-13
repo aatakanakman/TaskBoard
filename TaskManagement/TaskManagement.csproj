@@ -68,6 +68,12 @@
     <Compile Include="TaskManagment.Designer.cs">
       <DependentUpon>TaskManagment.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTask.Designer.cs">
+      <DependentUpon>UpdateTask.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,6 +88,9 @@
     </Compile>
     <EmbeddedResource Include="TaskManagment.resx">
       <DependentUpon>TaskManagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTask.resx">
+      <DependentUpon>UpdateTask.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

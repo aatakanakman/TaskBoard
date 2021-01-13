@@ -50,14 +50,15 @@
             this.txt_aciklama = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.durum4 = new System.Windows.Forms.TextBox();
+            this.aciklama4 = new System.Windows.Forms.TextBox();
+            this.is4 = new System.Windows.Forms.TextBox();
+            this.tarih4 = new System.Windows.Forms.TextBox();
             this.durum3 = new System.Windows.Forms.TextBox();
             this.aciklama3 = new System.Windows.Forms.TextBox();
             this.is3 = new System.Windows.Forms.TextBox();
@@ -78,7 +79,6 @@
             this.btn_sil = new System.Windows.Forms.Button();
             this.btn_guncelle = new System.Windows.Forms.Button();
             this.btn_kaydet = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -304,16 +304,16 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.73913F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.26087F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox20, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox19, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox18, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox17, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox16, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox15, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox14, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox13, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.durum4, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.aciklama4, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.is4, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tarih4, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.durum3, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.aciklama3, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.is3, 1, 3);
@@ -341,16 +341,27 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(772, 182);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(621, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(38, 13);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Durum";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(627, 128);
+            this.textBox20.Location = new System.Drawing.Point(621, 128);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(141, 20);
             this.textBox20.TabIndex = 23;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(329, 128);
+            this.textBox19.Location = new System.Drawing.Point(323, 128);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(292, 20);
@@ -358,57 +369,57 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(155, 128);
+            this.textBox18.Location = new System.Drawing.Point(153, 128);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(168, 20);
+            this.textBox18.Size = new System.Drawing.Size(164, 20);
             this.textBox18.TabIndex = 21;
             // 
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(3, 128);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(146, 20);
+            this.textBox17.Size = new System.Drawing.Size(144, 20);
             this.textBox17.TabIndex = 20;
             // 
-            // textBox16
+            // durum4
             // 
-            this.textBox16.Location = new System.Drawing.Point(627, 101);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(141, 20);
-            this.textBox16.TabIndex = 19;
+            this.durum4.Location = new System.Drawing.Point(621, 101);
+            this.durum4.Name = "durum4";
+            this.durum4.Size = new System.Drawing.Size(141, 20);
+            this.durum4.TabIndex = 19;
             // 
-            // textBox15
+            // aciklama4
             // 
-            this.textBox15.Location = new System.Drawing.Point(329, 101);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(292, 19);
-            this.textBox15.TabIndex = 18;
+            this.aciklama4.Location = new System.Drawing.Point(323, 101);
+            this.aciklama4.Multiline = true;
+            this.aciklama4.Name = "aciklama4";
+            this.aciklama4.Size = new System.Drawing.Size(292, 19);
+            this.aciklama4.TabIndex = 18;
             // 
-            // textBox14
+            // is4
             // 
-            this.textBox14.Location = new System.Drawing.Point(155, 101);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(168, 20);
-            this.textBox14.TabIndex = 17;
+            this.is4.Location = new System.Drawing.Point(153, 101);
+            this.is4.Name = "is4";
+            this.is4.Size = new System.Drawing.Size(164, 20);
+            this.is4.TabIndex = 17;
             // 
-            // textBox13
+            // tarih4
             // 
-            this.textBox13.Location = new System.Drawing.Point(3, 101);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(146, 20);
-            this.textBox13.TabIndex = 16;
+            this.tarih4.Location = new System.Drawing.Point(3, 101);
+            this.tarih4.Name = "tarih4";
+            this.tarih4.Size = new System.Drawing.Size(144, 20);
+            this.tarih4.TabIndex = 16;
             // 
             // durum3
             // 
-            this.durum3.Location = new System.Drawing.Point(627, 75);
+            this.durum3.Location = new System.Drawing.Point(621, 75);
             this.durum3.Name = "durum3";
             this.durum3.Size = new System.Drawing.Size(141, 20);
             this.durum3.TabIndex = 15;
             // 
             // aciklama3
             // 
-            this.aciklama3.Location = new System.Drawing.Point(329, 75);
+            this.aciklama3.Location = new System.Drawing.Point(323, 75);
             this.aciklama3.Multiline = true;
             this.aciklama3.Name = "aciklama3";
             this.aciklama3.Size = new System.Drawing.Size(292, 19);
@@ -416,28 +427,28 @@
             // 
             // is3
             // 
-            this.is3.Location = new System.Drawing.Point(155, 75);
+            this.is3.Location = new System.Drawing.Point(153, 75);
             this.is3.Name = "is3";
-            this.is3.Size = new System.Drawing.Size(168, 20);
+            this.is3.Size = new System.Drawing.Size(164, 20);
             this.is3.TabIndex = 13;
             // 
             // tarih3
             // 
             this.tarih3.Location = new System.Drawing.Point(3, 75);
             this.tarih3.Name = "tarih3";
-            this.tarih3.Size = new System.Drawing.Size(146, 20);
+            this.tarih3.Size = new System.Drawing.Size(144, 20);
             this.tarih3.TabIndex = 12;
             // 
             // durum2
             // 
-            this.durum2.Location = new System.Drawing.Point(627, 52);
+            this.durum2.Location = new System.Drawing.Point(621, 52);
             this.durum2.Name = "durum2";
             this.durum2.Size = new System.Drawing.Size(141, 20);
             this.durum2.TabIndex = 11;
             // 
             // aciklama2
             // 
-            this.aciklama2.Location = new System.Drawing.Point(329, 52);
+            this.aciklama2.Location = new System.Drawing.Point(323, 52);
             this.aciklama2.Multiline = true;
             this.aciklama2.Name = "aciklama2";
             this.aciklama2.Size = new System.Drawing.Size(292, 17);
@@ -447,19 +458,19 @@
             // 
             this.tarih2.Location = new System.Drawing.Point(3, 52);
             this.tarih2.Name = "tarih2";
-            this.tarih2.Size = new System.Drawing.Size(146, 20);
+            this.tarih2.Size = new System.Drawing.Size(144, 20);
             this.tarih2.TabIndex = 8;
             // 
             // durum1
             // 
-            this.durum1.Location = new System.Drawing.Point(627, 26);
+            this.durum1.Location = new System.Drawing.Point(621, 26);
             this.durum1.Name = "durum1";
             this.durum1.Size = new System.Drawing.Size(141, 20);
             this.durum1.TabIndex = 7;
             // 
             // aciklama1
             // 
-            this.aciklama1.Location = new System.Drawing.Point(329, 26);
+            this.aciklama1.Location = new System.Drawing.Point(323, 26);
             this.aciklama1.Multiline = true;
             this.aciklama1.Name = "aciklama1";
             this.aciklama1.Size = new System.Drawing.Size(292, 20);
@@ -467,15 +478,15 @@
             // 
             // is1
             // 
-            this.is1.Location = new System.Drawing.Point(155, 26);
+            this.is1.Location = new System.Drawing.Point(153, 26);
             this.is1.Name = "is1";
-            this.is1.Size = new System.Drawing.Size(168, 20);
+            this.is1.Size = new System.Drawing.Size(164, 20);
             this.is1.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(329, 0);
+            this.label12.Location = new System.Drawing.Point(323, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 2;
@@ -493,7 +504,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(155, 0);
+            this.label11.Location = new System.Drawing.Point(153, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 1;
@@ -503,14 +514,14 @@
             // 
             this.tarih1.Location = new System.Drawing.Point(3, 26);
             this.tarih1.Name = "tarih1";
-            this.tarih1.Size = new System.Drawing.Size(146, 20);
+            this.tarih1.Size = new System.Drawing.Size(144, 20);
             this.tarih1.TabIndex = 4;
             // 
             // is2
             // 
-            this.is2.Location = new System.Drawing.Point(155, 52);
+            this.is2.Location = new System.Drawing.Point(153, 52);
             this.is2.Name = "is2";
-            this.is2.Size = new System.Drawing.Size(168, 20);
+            this.is2.Size = new System.Drawing.Size(164, 20);
             this.is2.TabIndex = 9;
             // 
             // label9
@@ -579,17 +590,6 @@
             this.btn_kaydet.UseVisualStyleBackColor = false;
             this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(627, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(38, 13);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Durum";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // AddTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -599,6 +599,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "AddTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
@@ -650,10 +651,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox durum4;
+        private System.Windows.Forms.TextBox aciklama4;
+        private System.Windows.Forms.TextBox is4;
+        private System.Windows.Forms.TextBox tarih4;
         private System.Windows.Forms.TextBox durum3;
         private System.Windows.Forms.TextBox aciklama3;
         private System.Windows.Forms.TextBox is3;

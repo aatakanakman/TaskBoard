@@ -49,7 +49,70 @@ namespace TaskManagement
 
             komut2.ExecuteNonQuery();
         }
-        
-        
+        public void taskEkle2(Task task)
+        {
+            SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
+
+            komut2.Parameters.AddWithValue("@ad", task.name);
+            komut2.Parameters.AddWithValue("@aciklama", task.desc);
+            komut2.Parameters.AddWithValue("@tarih", task.date);
+            komut2.Parameters.AddWithValue("@durum_id", task.durumId);
+            komut2.Parameters.AddWithValue("@proje_ad", task.proje_ad);
+
+
+            komut2.ExecuteNonQuery();
+        }
+
+        public void TaskDurumGuncelle(Task task)
+        {
+            SqlCommand komut2 = new SqlCommand("update tbl_task set durum_id = @durum where task_name = @ad", baglanti());
+
+            komut2.Parameters.AddWithValue("@ad", task.name);
+            komut2.Parameters.AddWithValue("@durum", task.durumId);
+            komut2.ExecuteNonQuery();
+        }
+
+        public void projeSil(Proje prj)
+        {
+            SqlCommand komut2 = new SqlCommand("delete from tbl_proje where proje_name = @ad", baglanti());
+
+            komut2.Parameters.AddWithValue("@ad", prj.ad);
+            komut2.ExecuteNonQuery();
+
+            SqlCommand komut3 = new SqlCommand("delete from tbl_task where proje_ad = @ad", baglanti());
+
+            komut3.Parameters.AddWithValue("@ad", prj.ad);
+            komut3.ExecuteNonQuery();
+        }
+
+        //public void taskEkle3(Task task2)
+        //{
+        //    SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
+
+        //    komut2.Parameters.AddWithValue("@ad", task2.name);
+        //    komut2.Parameters.AddWithValue("@aciklama", task2.desc);
+        //    komut2.Parameters.AddWithValue("@tarih", task2.date);
+        //    komut2.Parameters.AddWithValue("@durum_id", task2.durumId);
+        //    komut2.Parameters.AddWithValue("@proje_ad", task2.proje_ad);
+
+
+        //    komut2.ExecuteNonQuery();
+        //}
+
+        //public void taskEkle4(Task task3)
+        //{
+        //    SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
+
+        //    komut2.Parameters.AddWithValue("@ad", task3.name);
+        //    komut2.Parameters.AddWithValue("@aciklama", task3.desc);
+        //    komut2.Parameters.AddWithValue("@tarih", task3.date);
+        //    komut2.Parameters.AddWithValue("@durum_id", task3.durumId);
+        //    komut2.Parameters.AddWithValue("@proje_ad", task3.proje_ad);
+
+
+        //    komut2.ExecuteNonQuery();
+        //}
+
+
     }
 }
