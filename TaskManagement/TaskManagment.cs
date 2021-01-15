@@ -79,15 +79,17 @@ namespace TaskManagement
             }
         }
 
+
+
         private void ToDo_MouseDown(object sender, MouseEventArgs e)
         {
             Task task = new Task();
             task.name = ToDo.SelectedItem.ToString();
             task.durumId = 2;
             db.TaskDurumGuncelle(task);
-           
-            Point nokta = new Point(e.X,e.Y);
-             sira = ToDo.IndexFromPoint(nokta);
+
+            Point nokta = new Point(e.X, e.Y);
+            sira = ToDo.IndexFromPoint(nokta);
             if (e.Button == MouseButtons.Left)
             {
                 ToDo.DoDragDrop(ToDo.Items[sira], DragDropEffects.All);
@@ -147,13 +149,15 @@ namespace TaskManagement
         private void btn_guncelle_Click(object sender, EventArgs e)
         {
             UpdateTask update = new UpdateTask();
-            update.Show();
+            update.ShowDialog();
 
             //AddTask addTask = new AddTask();
             //addTask.proje_name = (string)dataGridView1.CurrentRow.Cells["proje_name"].Value;
             //addTask.Show();
 
         }
+
+        
     }
  }
 

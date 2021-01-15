@@ -84,6 +84,43 @@ namespace TaskManagement
             komut3.Parameters.AddWithValue("@ad", prj.ad);
             komut3.ExecuteNonQuery();
         }
+        public SqlDataReader TaskGetir(Task task)
+        {
+            SqlCommand komut3 = new SqlCommand("Select * from tbl_task where proje_ad = @ad", baglanti());
+
+            komut3.Parameters.AddWithValue("@ad", task.proje_ad);
+            SqlDataReader data = komut3.ExecuteReader();
+
+            return data;
+
+        }
+
+        public SqlDataReader ProjeGetir(Proje prj)
+        {
+            SqlCommand komut3 = new SqlCommand("Select * from tbl_proje", baglanti());
+
+            
+
+
+            komut3.Parameters.AddWithValue("@ad", prj.ad);
+            SqlDataReader data1 = komut3.ExecuteReader();
+
+            return data1;
+
+        }
+
+        public SqlDataReader UserGetir()
+        {
+            SqlCommand komut4 = new SqlCommand("select user_name from tbl_proje p , tbl_user u where u.user_id = p.user_id ", baglanti());
+            SqlDataReader data2 = komut4.ExecuteReader();
+
+            return data2;
+
+        }
+
+        
+
+
 
         //public void taskEkle3(Task task2)
         //{

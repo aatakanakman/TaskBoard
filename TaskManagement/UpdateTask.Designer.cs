@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateTask));
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_sil = new System.Windows.Forms.Button();
             this.btn_guncelle = new System.Windows.Forms.Button();
-            this.btn_kaydet = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -98,27 +96,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel5.Controls.Add(this.btn_sil);
             this.panel5.Controls.Add(this.btn_guncelle);
-            this.panel5.Controls.Add(this.btn_kaydet);
             this.panel5.Location = new System.Drawing.Point(0, 649);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(805, 44);
             this.panel5.TabIndex = 7;
-            // 
-            // btn_sil
-            // 
-            this.btn_sil.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_sil.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_sil.Image")));
-            this.btn_sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sil.Location = new System.Drawing.Point(457, 0);
-            this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(99, 44);
-            this.btn_sil.TabIndex = 2;
-            this.btn_sil.Text = "Sil";
-            this.btn_sil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_sil.UseVisualStyleBackColor = false;
             // 
             // btn_guncelle
             // 
@@ -134,21 +116,7 @@
             this.btn_guncelle.Text = "Güncelle";
             this.btn_guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_guncelle.UseVisualStyleBackColor = false;
-            // 
-            // btn_kaydet
-            // 
-            this.btn_kaydet.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_kaydet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_kaydet.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_kaydet.Image = ((System.Drawing.Image)(resources.GetObject("btn_kaydet.Image")));
-            this.btn_kaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_kaydet.Location = new System.Drawing.Point(247, -1);
-            this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(99, 44);
-            this.btn_kaydet.TabIndex = 0;
-            this.btn_kaydet.Text = "Kaydet";
-            this.btn_kaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_kaydet.UseVisualStyleBackColor = false;
+            this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
             // 
             // panel3
             // 
@@ -166,7 +134,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.73913F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.26087F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox20, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox19, 2, 5);
@@ -206,7 +174,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(635, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(633, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(38, 13);
             this.linkLabel1.TabIndex = 3;
@@ -215,14 +183,14 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(635, 128);
+            this.textBox20.Location = new System.Drawing.Point(633, 128);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(141, 20);
             this.textBox20.TabIndex = 23;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(337, 128);
+            this.textBox19.Location = new System.Drawing.Point(335, 128);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(292, 20);
@@ -230,7 +198,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(159, 128);
+            this.textBox18.Location = new System.Drawing.Point(158, 128);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(164, 20);
             this.textBox18.TabIndex = 21;
@@ -244,14 +212,14 @@
             // 
             // durum4
             // 
-            this.durum4.Location = new System.Drawing.Point(635, 99);
+            this.durum4.Location = new System.Drawing.Point(633, 99);
             this.durum4.Name = "durum4";
             this.durum4.Size = new System.Drawing.Size(141, 20);
             this.durum4.TabIndex = 19;
             // 
             // aciklama4
             // 
-            this.aciklama4.Location = new System.Drawing.Point(337, 99);
+            this.aciklama4.Location = new System.Drawing.Point(335, 99);
             this.aciklama4.Multiline = true;
             this.aciklama4.Name = "aciklama4";
             this.aciklama4.Size = new System.Drawing.Size(292, 19);
@@ -259,7 +227,7 @@
             // 
             // is4
             // 
-            this.is4.Location = new System.Drawing.Point(159, 99);
+            this.is4.Location = new System.Drawing.Point(158, 99);
             this.is4.Name = "is4";
             this.is4.Size = new System.Drawing.Size(164, 20);
             this.is4.TabIndex = 17;
@@ -273,14 +241,14 @@
             // 
             // durum3
             // 
-            this.durum3.Location = new System.Drawing.Point(635, 75);
+            this.durum3.Location = new System.Drawing.Point(633, 75);
             this.durum3.Name = "durum3";
             this.durum3.Size = new System.Drawing.Size(141, 20);
             this.durum3.TabIndex = 15;
             // 
             // aciklama3
             // 
-            this.aciklama3.Location = new System.Drawing.Point(337, 75);
+            this.aciklama3.Location = new System.Drawing.Point(335, 75);
             this.aciklama3.Multiline = true;
             this.aciklama3.Name = "aciklama3";
             this.aciklama3.Size = new System.Drawing.Size(292, 18);
@@ -288,7 +256,7 @@
             // 
             // is3
             // 
-            this.is3.Location = new System.Drawing.Point(159, 75);
+            this.is3.Location = new System.Drawing.Point(158, 75);
             this.is3.Name = "is3";
             this.is3.Size = new System.Drawing.Size(164, 20);
             this.is3.TabIndex = 13;
@@ -302,14 +270,14 @@
             // 
             // durum2
             // 
-            this.durum2.Location = new System.Drawing.Point(635, 52);
+            this.durum2.Location = new System.Drawing.Point(633, 52);
             this.durum2.Name = "durum2";
             this.durum2.Size = new System.Drawing.Size(141, 20);
             this.durum2.TabIndex = 11;
             // 
             // aciklama2
             // 
-            this.aciklama2.Location = new System.Drawing.Point(337, 52);
+            this.aciklama2.Location = new System.Drawing.Point(335, 52);
             this.aciklama2.Multiline = true;
             this.aciklama2.Name = "aciklama2";
             this.aciklama2.Size = new System.Drawing.Size(292, 17);
@@ -324,14 +292,14 @@
             // 
             // durum1
             // 
-            this.durum1.Location = new System.Drawing.Point(635, 26);
+            this.durum1.Location = new System.Drawing.Point(633, 26);
             this.durum1.Name = "durum1";
             this.durum1.Size = new System.Drawing.Size(141, 20);
             this.durum1.TabIndex = 7;
             // 
             // aciklama1
             // 
-            this.aciklama1.Location = new System.Drawing.Point(337, 26);
+            this.aciklama1.Location = new System.Drawing.Point(335, 26);
             this.aciklama1.Multiline = true;
             this.aciklama1.Name = "aciklama1";
             this.aciklama1.Size = new System.Drawing.Size(292, 20);
@@ -339,7 +307,7 @@
             // 
             // is1
             // 
-            this.is1.Location = new System.Drawing.Point(159, 26);
+            this.is1.Location = new System.Drawing.Point(158, 26);
             this.is1.Name = "is1";
             this.is1.Size = new System.Drawing.Size(164, 20);
             this.is1.TabIndex = 5;
@@ -347,7 +315,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(337, 0);
+            this.label12.Location = new System.Drawing.Point(335, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 2;
@@ -365,7 +333,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(159, 0);
+            this.label11.Location = new System.Drawing.Point(158, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 1;
@@ -380,7 +348,7 @@
             // 
             // is2
             // 
-            this.is2.Location = new System.Drawing.Point(159, 52);
+            this.is2.Location = new System.Drawing.Point(158, 52);
             this.is2.Name = "is2";
             this.is2.Size = new System.Drawing.Size(164, 20);
             this.is2.TabIndex = 9;
@@ -436,7 +404,7 @@
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(748, 203);
             this.txt_aciklama.TabIndex = 0;
-            this.txt_aciklama.Text = "İşin Açıklaması";
+            this.txt_aciklama.Text = "Proje Açıklaması";
             // 
             // panel1
             // 
@@ -642,6 +610,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UpdateTask";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateTask";
             this.Load += new System.EventHandler(this.UpdateTask_Load);
             this.panel5.ResumeLayout(false);
@@ -664,9 +633,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_sil;
         private System.Windows.Forms.Button btn_guncelle;
-        private System.Windows.Forms.Button btn_kaydet;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.LinkLabel linkLabel1;

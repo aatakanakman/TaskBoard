@@ -87,12 +87,14 @@
             this.ToDo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ToDo.Font = new System.Drawing.Font("Georgia", 15F);
             this.ToDo.FormattingEnabled = true;
+            this.ToDo.HorizontalScrollbar = true;
             this.ToDo.ItemHeight = 24;
             this.ToDo.Location = new System.Drawing.Point(3, 77);
             this.ToDo.Name = "ToDo";
             this.ToDo.Size = new System.Drawing.Size(194, 528);
             this.ToDo.TabIndex = 6;
             this.ToDo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ToDo_MouseDown);
+           
             // 
             // label1
             // 
@@ -123,6 +125,7 @@
             this.InProgress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InProgress.Font = new System.Drawing.Font("Georgia", 15F);
             this.InProgress.FormattingEnabled = true;
+            this.InProgress.HorizontalScrollbar = true;
             this.InProgress.ItemHeight = 24;
             this.InProgress.Location = new System.Drawing.Point(3, 77);
             this.InProgress.Name = "InProgress";
@@ -162,6 +165,7 @@
             this.Complated.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Complated.Font = new System.Drawing.Font("Georgia", 15F);
             this.Complated.FormattingEnabled = true;
+            this.Complated.HorizontalScrollbar = true;
             this.Complated.ItemHeight = 24;
             this.Complated.Location = new System.Drawing.Point(3, 77);
             this.Complated.Name = "Complated";
@@ -213,10 +217,11 @@
             this.btn_guncelle.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_guncelle.Image = ((System.Drawing.Image)(resources.GetObject("btn_guncelle.Image")));
             this.btn_guncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_guncelle.Location = new System.Drawing.Point(121, 584);
+            this.btn_guncelle.Location = new System.Drawing.Point(100, 585);
             this.btn_guncelle.Name = "btn_guncelle";
-            this.btn_guncelle.Size = new System.Drawing.Size(67, 45);
+            this.btn_guncelle.Size = new System.Drawing.Size(102, 45);
             this.btn_guncelle.TabIndex = 4;
+            this.btn_guncelle.Text = "Güncelle";
             this.btn_guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_guncelle.UseVisualStyleBackColor = false;
             this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
@@ -231,6 +236,7 @@
             this.btn_sil.Name = "btn_sil";
             this.btn_sil.Size = new System.Drawing.Size(67, 45);
             this.btn_sil.TabIndex = 3;
+            this.btn_sil.Text = "Sil";
             this.btn_sil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_sil.UseVisualStyleBackColor = false;
             this.btn_sil.Click += new System.EventHandler(this.btn_sil_Click);
@@ -245,6 +251,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 45);
             this.button1.TabIndex = 1;
+            this.button1.Text = "Ekle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

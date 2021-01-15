@@ -72,10 +72,18 @@ namespace TaskManagement
                 task2.durumId = Convert.ToInt32(durum2.Text);
 
                 //task3.proje_ad = txt_projeAd.Text;
-                //task3.name = is3.Text;
-                //task3.date = tarih3.Text;
-                //task3.desc = aciklama3.Text;
-                //task3.durumId = Convert.ToInt32(durum3.Text);
+                //if(is3.Text == "" && tarih3.Text == "" && aciklama3.Text == "" && durum3.Text == "" && )
+                //{
+                    
+                //}
+                //else
+                //{
+                //    task3.name = is3.Text;
+                //    task3.date = tarih3.Text;
+                //    task3.desc = aciklama3.Text;
+                //    task3.durumId = Convert.ToInt32(durum3.Text);
+                //}
+                
 
                 //task4.proje_ad = txt_projeAd.Text;
                 //task4.name = is4.Text;

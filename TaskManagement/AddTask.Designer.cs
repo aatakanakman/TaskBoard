@@ -76,8 +76,6 @@
             this.is2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_sil = new System.Windows.Forms.Button();
-            this.btn_guncelle = new System.Windows.Forms.Button();
             this.btn_kaydet = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -304,7 +302,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.73913F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.26087F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox20, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox19, 2, 5);
@@ -344,7 +342,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(621, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(619, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(38, 13);
             this.linkLabel1.TabIndex = 3;
@@ -354,14 +352,14 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(621, 128);
+            this.textBox20.Location = new System.Drawing.Point(619, 128);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(141, 20);
             this.textBox20.TabIndex = 23;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(323, 128);
+            this.textBox19.Location = new System.Drawing.Point(321, 128);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(292, 20);
@@ -369,28 +367,28 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(153, 128);
+            this.textBox18.Location = new System.Drawing.Point(152, 128);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(164, 20);
+            this.textBox18.Size = new System.Drawing.Size(163, 20);
             this.textBox18.TabIndex = 21;
             // 
             // textBox17
             // 
             this.textBox17.Location = new System.Drawing.Point(3, 128);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(144, 20);
+            this.textBox17.Size = new System.Drawing.Size(143, 20);
             this.textBox17.TabIndex = 20;
             // 
             // durum4
             // 
-            this.durum4.Location = new System.Drawing.Point(621, 101);
+            this.durum4.Location = new System.Drawing.Point(619, 101);
             this.durum4.Name = "durum4";
             this.durum4.Size = new System.Drawing.Size(141, 20);
             this.durum4.TabIndex = 19;
             // 
             // aciklama4
             // 
-            this.aciklama4.Location = new System.Drawing.Point(323, 101);
+            this.aciklama4.Location = new System.Drawing.Point(321, 101);
             this.aciklama4.Multiline = true;
             this.aciklama4.Name = "aciklama4";
             this.aciklama4.Size = new System.Drawing.Size(292, 19);
@@ -398,28 +396,28 @@
             // 
             // is4
             // 
-            this.is4.Location = new System.Drawing.Point(153, 101);
+            this.is4.Location = new System.Drawing.Point(152, 101);
             this.is4.Name = "is4";
-            this.is4.Size = new System.Drawing.Size(164, 20);
+            this.is4.Size = new System.Drawing.Size(163, 20);
             this.is4.TabIndex = 17;
             // 
             // tarih4
             // 
             this.tarih4.Location = new System.Drawing.Point(3, 101);
             this.tarih4.Name = "tarih4";
-            this.tarih4.Size = new System.Drawing.Size(144, 20);
+            this.tarih4.Size = new System.Drawing.Size(143, 20);
             this.tarih4.TabIndex = 16;
             // 
             // durum3
             // 
-            this.durum3.Location = new System.Drawing.Point(621, 75);
+            this.durum3.Location = new System.Drawing.Point(619, 75);
             this.durum3.Name = "durum3";
             this.durum3.Size = new System.Drawing.Size(141, 20);
             this.durum3.TabIndex = 15;
             // 
             // aciklama3
             // 
-            this.aciklama3.Location = new System.Drawing.Point(323, 75);
+            this.aciklama3.Location = new System.Drawing.Point(321, 75);
             this.aciklama3.Multiline = true;
             this.aciklama3.Name = "aciklama3";
             this.aciklama3.Size = new System.Drawing.Size(292, 19);
@@ -427,28 +425,28 @@
             // 
             // is3
             // 
-            this.is3.Location = new System.Drawing.Point(153, 75);
+            this.is3.Location = new System.Drawing.Point(152, 75);
             this.is3.Name = "is3";
-            this.is3.Size = new System.Drawing.Size(164, 20);
+            this.is3.Size = new System.Drawing.Size(163, 20);
             this.is3.TabIndex = 13;
             // 
             // tarih3
             // 
             this.tarih3.Location = new System.Drawing.Point(3, 75);
             this.tarih3.Name = "tarih3";
-            this.tarih3.Size = new System.Drawing.Size(144, 20);
+            this.tarih3.Size = new System.Drawing.Size(143, 20);
             this.tarih3.TabIndex = 12;
             // 
             // durum2
             // 
-            this.durum2.Location = new System.Drawing.Point(621, 52);
+            this.durum2.Location = new System.Drawing.Point(619, 52);
             this.durum2.Name = "durum2";
             this.durum2.Size = new System.Drawing.Size(141, 20);
             this.durum2.TabIndex = 11;
             // 
             // aciklama2
             // 
-            this.aciklama2.Location = new System.Drawing.Point(323, 52);
+            this.aciklama2.Location = new System.Drawing.Point(321, 52);
             this.aciklama2.Multiline = true;
             this.aciklama2.Name = "aciklama2";
             this.aciklama2.Size = new System.Drawing.Size(292, 17);
@@ -458,19 +456,19 @@
             // 
             this.tarih2.Location = new System.Drawing.Point(3, 52);
             this.tarih2.Name = "tarih2";
-            this.tarih2.Size = new System.Drawing.Size(144, 20);
+            this.tarih2.Size = new System.Drawing.Size(143, 20);
             this.tarih2.TabIndex = 8;
             // 
             // durum1
             // 
-            this.durum1.Location = new System.Drawing.Point(621, 26);
+            this.durum1.Location = new System.Drawing.Point(619, 26);
             this.durum1.Name = "durum1";
             this.durum1.Size = new System.Drawing.Size(141, 20);
             this.durum1.TabIndex = 7;
             // 
             // aciklama1
             // 
-            this.aciklama1.Location = new System.Drawing.Point(323, 26);
+            this.aciklama1.Location = new System.Drawing.Point(321, 26);
             this.aciklama1.Multiline = true;
             this.aciklama1.Name = "aciklama1";
             this.aciklama1.Size = new System.Drawing.Size(292, 20);
@@ -478,15 +476,15 @@
             // 
             // is1
             // 
-            this.is1.Location = new System.Drawing.Point(153, 26);
+            this.is1.Location = new System.Drawing.Point(152, 26);
             this.is1.Name = "is1";
-            this.is1.Size = new System.Drawing.Size(164, 20);
+            this.is1.Size = new System.Drawing.Size(163, 20);
             this.is1.TabIndex = 5;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(323, 0);
+            this.label12.Location = new System.Drawing.Point(321, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 2;
@@ -504,7 +502,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(153, 0);
+            this.label11.Location = new System.Drawing.Point(152, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 1;
@@ -514,14 +512,14 @@
             // 
             this.tarih1.Location = new System.Drawing.Point(3, 26);
             this.tarih1.Name = "tarih1";
-            this.tarih1.Size = new System.Drawing.Size(144, 20);
+            this.tarih1.Size = new System.Drawing.Size(143, 20);
             this.tarih1.TabIndex = 4;
             // 
             // is2
             // 
-            this.is2.Location = new System.Drawing.Point(153, 52);
+            this.is2.Location = new System.Drawing.Point(152, 52);
             this.is2.Name = "is2";
-            this.is2.Size = new System.Drawing.Size(164, 20);
+            this.is2.Size = new System.Drawing.Size(163, 20);
             this.is2.TabIndex = 9;
             // 
             // label9
@@ -537,42 +535,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel5.Controls.Add(this.btn_sil);
-            this.panel5.Controls.Add(this.btn_guncelle);
             this.panel5.Controls.Add(this.btn_kaydet);
             this.panel5.Location = new System.Drawing.Point(0, 678);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(785, 44);
             this.panel5.TabIndex = 3;
-            // 
-            // btn_sil
-            // 
-            this.btn_sil.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_sil.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_sil.Image")));
-            this.btn_sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sil.Location = new System.Drawing.Point(457, 0);
-            this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(99, 44);
-            this.btn_sil.TabIndex = 2;
-            this.btn_sil.Text = "Sil";
-            this.btn_sil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_sil.UseVisualStyleBackColor = false;
-            // 
-            // btn_guncelle
-            // 
-            this.btn_guncelle.BackColor = System.Drawing.Color.AliceBlue;
-            this.btn_guncelle.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_guncelle.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_guncelle.Image = ((System.Drawing.Image)(resources.GetObject("btn_guncelle.Image")));
-            this.btn_guncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_guncelle.Location = new System.Drawing.Point(352, -1);
-            this.btn_guncelle.Name = "btn_guncelle";
-            this.btn_guncelle.Size = new System.Drawing.Size(99, 44);
-            this.btn_guncelle.TabIndex = 1;
-            this.btn_guncelle.Text = "Güncelle";
-            this.btn_guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_guncelle.UseVisualStyleBackColor = false;
             // 
             // btn_kaydet
             // 
@@ -581,7 +548,7 @@
             this.btn_kaydet.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_kaydet.Image = ((System.Drawing.Image)(resources.GetObject("btn_kaydet.Image")));
             this.btn_kaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_kaydet.Location = new System.Drawing.Point(247, -1);
+            this.btn_kaydet.Location = new System.Drawing.Point(337, -1);
             this.btn_kaydet.Name = "btn_kaydet";
             this.btn_kaydet.Size = new System.Drawing.Size(99, 44);
             this.btn_kaydet.TabIndex = 0;
@@ -643,8 +610,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox txt_not;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_sil;
-        private System.Windows.Forms.Button btn_guncelle;
         private System.Windows.Forms.Button btn_kaydet;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
