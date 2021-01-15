@@ -26,7 +26,7 @@ namespace TaskManagement
 
             komut.Parameters.AddWithValue("@ad", prj.ad);
             komut.Parameters.AddWithValue("@tarih", prj.tarih);
-            komut.Parameters.AddWithValue("@not", prj.not);
+            komut.Parameters.AddWithValue("@not", prj.not); 
             komut.Parameters.AddWithValue("@desc", prj.aciklama);
             komut.Parameters.AddWithValue("@tahminiSure", prj.tahminiSure);
             komut.Parameters.AddWithValue("@gercekSure", prj.gercekSure);
@@ -139,14 +139,11 @@ namespace TaskManagement
         //public void taskEkle4(Task task3)
         //{
         //    SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
-
         //    komut2.Parameters.AddWithValue("@ad", task3.name);
         //    komut2.Parameters.AddWithValue("@aciklama", task3.desc);
         //    komut2.Parameters.AddWithValue("@tarih", task3.date);
         //    komut2.Parameters.AddWithValue("@durum_id", task3.durumId);
         //    komut2.Parameters.AddWithValue("@proje_ad", task3.proje_ad);
-
-
         //    komut2.ExecuteNonQuery();
         //}
 

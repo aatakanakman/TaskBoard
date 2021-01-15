@@ -35,13 +35,15 @@ namespace TaskManagement
 
         private void getir_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            secilenProje = (string)comboBox1.SelectedValue.ToString();
             if (comboBox1.SelectedItem != null)
             {
                 Task task = new Task();
-                secilenProje = (string)comboBox1.SelectedValue.ToString();
+                
+                MessageBox.Show(secilenProje);
                 task.proje_ad = secilenProje;
                 SqlDataReader dr = db.TaskGetir(task);
-
+                
                 Proje prj = new Proje();
                 prj.ad = (string)comboBox1.SelectedValue.ToString();
                 SqlDataReader dr1 = db.ProjeGetir(prj);
@@ -53,19 +55,14 @@ namespace TaskManagement
 
                     txt_uzman.Text = (string)dr2["user_name"];
 
-
-
                 }
 
 
                 while (dr1.Read())
                 {
-
                     txt_aciklama.Text = (string)dr1["proje_desc"];
                     txt_not.Text = (string)dr1["proje_not"];
                     txt_tahminsure.Text = (string)dr1["proje_tahmini"];
-
-
                 }
 
 
@@ -75,11 +72,8 @@ namespace TaskManagement
                     isAciklama.Add((string)dr["task_desc"]);
                     isTarih.Add((string)dr["task_date"]);
                     durumId.Add((int)dr["durum_id"]);
-
-
-
                 }
-                int i;
+                int i; 
                 for (i = 0; i < isAdi.Count; i++)
                 {
                     is1.Text = isAdi[0];
@@ -96,9 +90,6 @@ namespace TaskManagement
             {
                 MessageBox.Show("Henüz Bir Proje seçilmedi veya proje yok");
             }
-            
-
-
         }
 
         private void btn_guncelle_Click(object sender, EventArgs e)

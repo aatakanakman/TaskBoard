@@ -59,17 +59,36 @@ namespace TaskManagement
                 prj.gercekSure = txt_gerceksure.Text;
                 prj.userId = 1;
 
-                task.proje_ad = txt_projeAd.Text;
-                task.name = is1.Text;
-                task.date = tarih1.Text;
-                task.desc = aciklama1.Text;
-                task.durumId = Convert.ToInt32(durum1.Text);
+                if(is1.Text != "")
+                {
+                    task.proje_ad = txt_projeAd.Text;
+                    task.name = is1.Text;
+                    task.date = tarih1.Text;
+                    task.desc = aciklama1.Text;
+                    task.durumId = Convert.ToInt32(durum1.Text);
 
-                task2.proje_ad = txt_projeAd.Text;
-                task2.name = is2.Text;
-                task2.date = tarih2.Text;
-                task2.desc = aciklama2.Text;
-                task2.durumId = Convert.ToInt32(durum2.Text);
+                    task2.proje_ad = txt_projeAd.Text;
+                    task2.name = is2.Text;
+                    task2.date = tarih2.Text;
+                    task2.desc = aciklama2.Text;
+                    task2.durumId = Convert.ToInt32(durum2.Text);
+
+                    db.taskEkle(task);
+                    db.taskEkle2(task2);
+                    //db.taskEkle3(task3);
+                    //db.taskEkle4(task4);
+
+                    db.projeEkle(prj);
+
+                    TaskManagment task1 = new TaskManagment();
+                    task1.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("En az iki tane task eklenmesi lazım.");
+                }
+                
 
                 //task3.proje_ad = txt_projeAd.Text;
                 //if(is3.Text == "" && tarih3.Text == "" && aciklama3.Text == "" && durum3.Text == "" && )
@@ -81,7 +100,7 @@ namespace TaskManagement
                 //    task3.name = is3.Text;
                 //    task3.date = tarih3.Text;
                 //    task3.desc = aciklama3.Text;
-                //    task3.durumId = Convert.ToInt32(durum3.Text);
+                //    task3.durumId = Convert.ToInt32(du rum3.Text);
                 //}
                 
 
@@ -91,16 +110,7 @@ namespace TaskManagement
                 //task4.desc = aciklama4.Text;
                 //task4.durumId = Convert.ToInt32(durum4.Text);
 
-                db.taskEkle(task);
-                db.taskEkle2(task2);
-                //db.taskEkle3(task3);
-                //db.taskEkle4(task4);
-
-                db.projeEkle(prj);
-
-                TaskManagment task1 = new TaskManagment();
-                task1.Show();
-                this.Hide();
+                
 
             }
         }
