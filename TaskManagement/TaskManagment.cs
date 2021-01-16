@@ -51,6 +51,8 @@ namespace TaskManagement
             InProgress.Items.Clear();
             Complated.Items.Clear();
 
+             
+
             SqlCommand cmd = new SqlCommand("Select task_name,durum_id from tbl_task where proje_ad = @projead ", db.baglanti()); ;
             cmd.Parameters.AddWithValue("@projead", dataGridView1.CurrentRow.Cells["proje_name"].Value); 
             SqlDataReader dr = cmd.ExecuteReader();

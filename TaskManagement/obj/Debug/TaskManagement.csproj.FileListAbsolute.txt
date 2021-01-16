@@ -21,3 +21,15 @@ C:\Users\USER\Desktop\TaskBoard\TaskBoard\TaskManagement\obj\Debug\TaskManagemen
 C:\Users\USER\Desktop\TaskBoard\TaskBoard\TaskManagement\obj\Debug\TaskManagement.exe
 C:\Users\USER\Desktop\TaskBoard\TaskBoard\TaskManagement\obj\Debug\TaskManagement.pdb
 C:\Users\USER\Desktop\TaskBoard\TaskBoard\TaskManagement\obj\Debug\TaskManagement.UpdateTask.resources
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\bin\Debug\TaskManagement.exe.config
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\bin\Debug\TaskManagement.exe
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\bin\Debug\TaskManagement.pdb
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.AddTask.resources
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.Properties.Resources.resources
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.TaskManagment.resources
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.UpdateTask.resources
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.exe
+C:\Users\USER\Desktop\TaskBoard1\TaskBoard\TaskManagement\obj\Debug\TaskManagement.pdb

@@ -134,7 +134,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.73913F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.26087F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox20, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox19, 2, 5);
@@ -174,7 +174,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(633, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(632, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(38, 13);
             this.linkLabel1.TabIndex = 3;
@@ -183,14 +183,14 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(633, 128);
+            this.textBox20.Location = new System.Drawing.Point(632, 128);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(141, 20);
             this.textBox20.TabIndex = 23;
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(335, 128);
+            this.textBox19.Location = new System.Drawing.Point(334, 128);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(292, 20);
@@ -212,14 +212,14 @@
             // 
             // durum4
             // 
-            this.durum4.Location = new System.Drawing.Point(633, 99);
+            this.durum4.Location = new System.Drawing.Point(632, 99);
             this.durum4.Name = "durum4";
             this.durum4.Size = new System.Drawing.Size(141, 20);
             this.durum4.TabIndex = 19;
             // 
             // aciklama4
             // 
-            this.aciklama4.Location = new System.Drawing.Point(335, 99);
+            this.aciklama4.Location = new System.Drawing.Point(334, 99);
             this.aciklama4.Multiline = true;
             this.aciklama4.Name = "aciklama4";
             this.aciklama4.Size = new System.Drawing.Size(292, 19);
@@ -241,14 +241,14 @@
             // 
             // durum3
             // 
-            this.durum3.Location = new System.Drawing.Point(633, 75);
+            this.durum3.Location = new System.Drawing.Point(632, 75);
             this.durum3.Name = "durum3";
             this.durum3.Size = new System.Drawing.Size(141, 20);
             this.durum3.TabIndex = 15;
             // 
             // aciklama3
             // 
-            this.aciklama3.Location = new System.Drawing.Point(335, 75);
+            this.aciklama3.Location = new System.Drawing.Point(334, 75);
             this.aciklama3.Multiline = true;
             this.aciklama3.Name = "aciklama3";
             this.aciklama3.Size = new System.Drawing.Size(292, 18);
@@ -270,14 +270,14 @@
             // 
             // durum2
             // 
-            this.durum2.Location = new System.Drawing.Point(633, 52);
+            this.durum2.Location = new System.Drawing.Point(632, 52);
             this.durum2.Name = "durum2";
             this.durum2.Size = new System.Drawing.Size(141, 20);
             this.durum2.TabIndex = 11;
             // 
             // aciklama2
             // 
-            this.aciklama2.Location = new System.Drawing.Point(335, 52);
+            this.aciklama2.Location = new System.Drawing.Point(334, 52);
             this.aciklama2.Multiline = true;
             this.aciklama2.Name = "aciklama2";
             this.aciklama2.Size = new System.Drawing.Size(292, 17);
@@ -292,14 +292,14 @@
             // 
             // durum1
             // 
-            this.durum1.Location = new System.Drawing.Point(633, 26);
+            this.durum1.Location = new System.Drawing.Point(632, 26);
             this.durum1.Name = "durum1";
             this.durum1.Size = new System.Drawing.Size(141, 20);
             this.durum1.TabIndex = 7;
             // 
             // aciklama1
             // 
-            this.aciklama1.Location = new System.Drawing.Point(335, 26);
+            this.aciklama1.Location = new System.Drawing.Point(334, 26);
             this.aciklama1.Multiline = true;
             this.aciklama1.Name = "aciklama1";
             this.aciklama1.Size = new System.Drawing.Size(292, 20);
@@ -315,7 +315,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(335, 0);
+            this.label12.Location = new System.Drawing.Point(334, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 2;

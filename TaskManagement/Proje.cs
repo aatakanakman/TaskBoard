@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagement
 {
-    class Proje
+    public class Proje
     {
         public int  proje_id { get; set; }
 

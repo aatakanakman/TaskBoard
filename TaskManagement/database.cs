@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TaskManagement
 {
-    class database
+    public class database
     {
       
 
@@ -19,7 +19,7 @@ namespace TaskManagement
             return baglan;
         }
 
-        public void projeEkle(Proje prj)
+        public string projeEkle(Proje prj)
         {
             
             SqlCommand komut = new SqlCommand("INSERT INTO tbl_proje(proje_name,proje_tarih,proje_not,proje_desc,proje_tahmini,proje_gerceklesen,user_id) VALUES (@ad,@tarih,@not,@desc,@tahminiSure,@gercekSure,@user)",baglanti());
@@ -33,10 +33,11 @@ namespace TaskManagement
             komut.Parameters.AddWithValue("@user", prj.userId);
             komut.ExecuteNonQuery();
 
+            return "Proje Eklendi";
    
         }
 
-        public void taskEkle(Task task)
+        public string taskEkle(Task task)
         {
             SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
 
@@ -48,6 +49,8 @@ namespace TaskManagement
 
 
             komut2.ExecuteNonQuery();
+
+            return "Task Eklendi";
         }
         public void taskEkle2(Task task)
         {
@@ -72,7 +75,7 @@ namespace TaskManagement
             komut2.ExecuteNonQuery();
         }
 
-        public void projeSil(Proje prj)
+        public string projeSil(Proje prj)
         {
             SqlCommand komut2 = new SqlCommand("delete from tbl_proje where proje_name = @ad", baglanti());
 
@@ -83,6 +86,8 @@ namespace TaskManagement
 
             komut3.Parameters.AddWithValue("@ad", prj.ad);
             komut3.ExecuteNonQuery();
+
+            return "Silindi";
         }
         public SqlDataReader TaskGetir(Task task)
         {
@@ -97,14 +102,9 @@ namespace TaskManagement
 
         public SqlDataReader ProjeGetir(Proje prj)
         {
-            SqlCommand komut3 = new SqlCommand("Select * from tbl_proje", baglanti());
-
-            
-
-
+            SqlCommand komut3 = new SqlCommand("Select * from tbl_proje where proje_name = @ad", baglanti());
             komut3.Parameters.AddWithValue("@ad", prj.ad);
             SqlDataReader data1 = komut3.ExecuteReader();
-
             return data1;
 
         }
