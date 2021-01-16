@@ -118,35 +118,14 @@ namespace TaskManagement
 
         }
 
-        
+        public SqlDataReader Doldur(Proje prj)
+        {
+            SqlCommand cmd = new SqlCommand("Select task_name,durum_id from tbl_task where proje_ad = @projead ",baglanti()); ;
+            cmd.Parameters.AddWithValue("@projead", prj.ad);
+           SqlDataReader dr = cmd.ExecuteReader();
 
+            return dr;
 
-
-        //public void taskEkle3(Task task2)
-        //{
-        //    SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
-
-        //    komut2.Parameters.AddWithValue("@ad", task2.name);
-        //    komut2.Parameters.AddWithValue("@aciklama", task2.desc);
-        //    komut2.Parameters.AddWithValue("@tarih", task2.date);
-        //    komut2.Parameters.AddWithValue("@durum_id", task2.durumId);
-        //    komut2.Parameters.AddWithValue("@proje_ad", task2.proje_ad);
-
-
-        //    komut2.ExecuteNonQuery();
-        //}
-
-        //public void taskEkle4(Task task3)
-        //{
-        //    SqlCommand komut2 = new SqlCommand("INSERT INTO tbl_task(task_name,task_desc,task_date,durum_id,proje_ad) VALUES (@ad,@aciklama,@tarih,@durum_id,@proje_ad)", baglanti());
-        //    komut2.Parameters.AddWithValue("@ad", task3.name);
-        //    komut2.Parameters.AddWithValue("@aciklama", task3.desc);
-        //    komut2.Parameters.AddWithValue("@tarih", task3.date);
-        //    komut2.Parameters.AddWithValue("@durum_id", task3.durumId);
-        //    komut2.Parameters.AddWithValue("@proje_ad", task3.proje_ad);
-        //    komut2.ExecuteNonQuery();
-        //}
-
-
+        }
     }
 }

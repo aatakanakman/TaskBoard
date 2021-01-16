@@ -13,13 +13,14 @@ namespace TaskManagement
 {
     public partial class UpdateTask : Form
     {
+        //Gerekli olan nesne ve listelerimizi oluşşturuyoruz.
         database db = new database();
         List<String> isAdi = new List<String>();
         List<String> isAciklama = new List<String>();
         List<String> isTarih = new List<String>();
         List<int> durumId = new List<int>();
 
-        public string secilenProje { get; set; }
+        public string secilenProje { get; set; } 
 
         public UpdateTask()
         {
@@ -33,14 +34,15 @@ namespace TaskManagement
 
         }
 
+        //Getir label'ına tıkladığımızda combobox üzerinden seçilen projenin adına göre ilgili yerlere database üzerinden değerleri çekiyoruz.
         private void getir_label_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            secilenProje = (string)comboBox1.SelectedValue.ToString();
-            if (comboBox1.SelectedItem != null)
+            secilenProje = (string)comboBox1.SelectedValue.ToString(); //combobox'taki değeri secilen proje olarak değişkene akratıyoruz.
+            if (comboBox1.SelectedItem != null) //Bir projenin seçildiğinden emin oluyoruz.
             {
                 Task task = new Task();
                 
-                MessageBox.Show(secilenProje);
+                //MessageBox.Show(secilenProje);
                 task.proje_ad = secilenProje;
                 SqlDataReader dr = db.TaskGetir(task);
                 
@@ -49,11 +51,13 @@ namespace TaskManagement
                 SqlDataReader dr1 = db.ProjeGetir(prj);
 
                 SqlDataReader dr2 = db.UserGetir();
+               
+                //Fonksiyonların geri dönüş değerleri okunana dek aşağıdaki işlemleri gerçekleştiriyoruz.
 
                 while (dr2.Read())
                 {
 
-                    txt_uzman.Text = (string)dr2["user_name"];
+                    txt_uzman.Text = (string)dr2["user_name"]; 
 
                 }
 
@@ -68,11 +72,14 @@ namespace TaskManagement
 
                 while (dr.Read())
                 {
+                    //Oluşturmuş olduğumuz listelere okunan değerleri sırasıyla ekliyoruz.
                     isAdi.Add((string)dr["task_name"]);
                     isAciklama.Add((string)dr["task_desc"]);
                     isTarih.Add((string)dr["task_date"]);
                     durumId.Add((int)dr["durum_id"]);
                 }
+
+                //Eklediğimiz değerleri döngü içerisinde sırasıyla ilgili textboxlara aktarıyoruz.
                 int i; 
                 for (i = 0; i < isAdi.Count; i++)
                 {
@@ -90,11 +97,6 @@ namespace TaskManagement
             {
                 MessageBox.Show("Henüz Bir Proje seçilmedi veya proje yok");
             }
-        }
-
-        private void btn_guncelle_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -94,7 +94,6 @@
             this.ToDo.Size = new System.Drawing.Size(194, 528);
             this.ToDo.TabIndex = 6;
             this.ToDo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ToDo_MouseDown);
-           
             // 
             // label1
             // 
@@ -304,7 +303,6 @@
             this.Controls.Add(this.panel3);
             this.Name = "TaskManagment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TaskManagment";
             this.Load += new System.EventHandler(this.TaskManagment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblprojeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.taskManagementDataSet)).EndInit();

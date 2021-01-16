@@ -13,13 +13,11 @@ namespace TaskManagement
     public partial class AddTask : Form
     {
         public string proje_name { get; set; }
-
+        //Sınıflardan nesneler oluştuyoruz.
         database db = new database();
         Proje prj = new Proje();
         Task task = new Task();
         Task task2 = new Task();
-        Task task3 = new Task();
-        Task task4 = new Task();
         public AddTask()
         {
             InitializeComponent();
@@ -27,7 +25,8 @@ namespace TaskManagement
 
         private void txt_aciklama_Enter(object sender, EventArgs e)
         {
-            if(txt_aciklama.Text == "İşin Açıklaması")
+            //Placeholder özelliği olması için textbox'a tıklandığında içindeki text değerini boşalltıyoruz.
+            if(txt_aciklama.Text == "İşin Açıklaması") 
             {
                 txt_aciklama.Text = "";
             }
@@ -35,7 +34,8 @@ namespace TaskManagement
 
         private void txt_not_Enter(object sender, EventArgs e)
         {
-            if(txt_not.Text == "Notlar:")
+            //Placeholder özelliği olması için textbox'a tıklandığında içindeki text değerini boşalltıyoruz.
+            if (txt_not.Text == "Notlar:")
             {
                 txt_not.Text = "";
             }
@@ -45,12 +45,14 @@ namespace TaskManagement
         {
             
             task.proje_ad = txt_projeAd.Text; 
+            //İf bloğu içerisinde proje ad ve tarih textboxlarının boş geçilemeyeceğini kontrol ederek kullanıcıya bildiriyoruz.
             if(Convert.ToString(timepicker.Value) == "" && txt_projeAd.Text == "")
             {
                 MessageBox.Show("Proje adı ve Tarih boş geçilemez");
             }
             else
             {
+                //Kullanıcı tarafında girilen değerleri sınıflardan aldığımız örneklere aktarıp, örneğimizi database sınıfı içerisinde olan ilgili method'a aktarıyoruz.
                 prj.ad = txt_projeAd.Text;
                 prj.tarih = Convert.ToString(timepicker.Value);
                 prj.aciklama = txt_aciklama.Text;
@@ -61,6 +63,7 @@ namespace TaskManagement
 
                 if(is1.Text != "")
                 {
+                    //İlgili projeye eklenen taskları task sınıfından oluşturduğumuz örnekler içerisine aktardıktan sonra database sınıfındaki ilgili method'a gönderiyoruz.
                     task.proje_ad = txt_projeAd.Text;
                     task.name = is1.Text;
                     task.date = tarih1.Text;
@@ -75,12 +78,8 @@ namespace TaskManagement
 
                     db.taskEkle(task);
                     db.taskEkle2(task2);
-                    //db.taskEkle3(task3);
-                    //db.taskEkle4(task4);
-
                     db.projeEkle(prj);
-
-                    TaskManagment task1 = new TaskManagment();
+                    TaskManagment task1 = new TaskManagment(); 
                     task1.Show();
                     this.Hide();
                 }
@@ -88,30 +87,6 @@ namespace TaskManagement
                 {
                     MessageBox.Show("En az iki tane task eklenmesi lazım.");
                 }
-                
-
-                //task3.proje_ad = txt_projeAd.Text;
-                //if(is3.Text == "" && tarih3.Text == "" && aciklama3.Text == "" && durum3.Text == "" && )
-                //{
-                    
-                //}
-                //else
-                //{
-                //    task3.name = is3.Text;
-                //    task3.date = tarih3.Text;
-                //    task3.desc = aciklama3.Text;
-                //    task3.durumId = Convert.ToInt32(du rum3.Text);
-                //}
-                
-
-                //task4.proje_ad = txt_projeAd.Text;
-                //task4.name = is4.Text;
-                //task4.date = tarih4.Text;
-                //task4.desc = aciklama4.Text;
-                //task4.durumId = Convert.ToInt32(durum4.Text);
-
-                
-
             }
         }
 
@@ -122,6 +97,7 @@ namespace TaskManagement
 
         private void AddTask_FormClosed(object sender, FormClosedEventArgs e)
         {
+            //Ekleme ekranı kapatıldığında TaskManagment formunun yüklenmesini istiyoruz.
             TaskManagment task = new TaskManagment();
             task.Show();
             this.Hide();
@@ -129,6 +105,7 @@ namespace TaskManagement
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //Durum hakkında bilgilendirme yapmak için linklabel özelliğ ile durumlar ve karşılık gelen kodları messagebox içerisinde gösterdik.
             MessageBox.Show("To Do = 1 || In Progress = 2 || Complated = 3 ");
         }
     }
