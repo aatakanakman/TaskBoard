@@ -12,6 +12,9 @@ namespace TaskManagement
 {
     public partial class AddTask : Form
     {
+        string[] dizi;
+        int tahminiSüre = 0;
+        
         public string proje_name { get; set; }
         //Sınıflardan nesneler oluştuyoruz.
         database db = new database();
@@ -41,6 +44,7 @@ namespace TaskManagement
             }
         }
 
+
         private void btn_kaydet_Click(object sender, EventArgs e)
         {
             
@@ -57,11 +61,40 @@ namespace TaskManagement
                 prj.tarih = Convert.ToString(timepicker.Value);
                 prj.aciklama = txt_aciklama.Text;
                 prj.not = txt_not.Text;
-                prj.tahminiSure = txt_tahminsure.Text;
+                
                 prj.gercekSure = txt_gerceksure.Text;
                 prj.userId = 1;
 
-                if(is1.Text != "")
+                //Günlük ortalama 6 saat çalışma ile bir uygulamanın platfrmuna göre ortalama tamamlanma sürelerini araştırarak bir gün tahmini yaptım.
+                if (txt_aciklama.Text.ToLower().Contains("web") == true)
+                {
+                    tahminiSüre += 20;
+                }
+                if (txt_aciklama.Text.ToLower().Contains("mobil") == true)
+                {
+                    tahminiSüre += 66;
+                }
+
+                if (txt_aciklama.Text.ToLower().Contains("forum") == true)
+                {
+                    tahminiSüre += 25;
+                }
+
+                if (txt_aciklama.Text.ToLower().Contains("masaüstü") == true)
+                {
+                    tahminiSüre += 55;
+                }
+
+                if (txt_aciklama.Text.ToLower().Contains("blog") == true)
+                {
+                    tahminiSüre += 15;
+                }
+
+                
+                prj.tahminiSure = Convert.ToString(tahminiSüre) + "Gün";
+                
+
+                if (is1.Text != "")
                 {
                     //İlgili projeye eklenen taskları task sınıfından oluşturduğumuz örnekler içerisine aktardıktan sonra database sınıfındaki ilgili method'a gönderiyoruz.
                     task.proje_ad = txt_projeAd.Text;
@@ -107,6 +140,12 @@ namespace TaskManagement
         {
             //Durum hakkında bilgilendirme yapmak için linklabel özelliğ ile durumlar ve karşılık gelen kodları messagebox içerisinde gösterdik.
             MessageBox.Show("To Do = 1 || In Progress = 2 || Complated = 3 ");
+        }
+
+        public void SureHesapla()
+        {
+
+
         }
     }
 }

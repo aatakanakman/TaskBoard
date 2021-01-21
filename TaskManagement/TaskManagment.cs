@@ -19,7 +19,7 @@ namespace TaskManagement
         database db = new database();
         int sira;
         int sira2;
-
+        string mesaj;
 
         public TaskManagment()
         {
@@ -143,6 +143,16 @@ namespace TaskManagement
             prj.ad = (string)dataGridView1.CurrentRow.Cells["proje_name"].Value;
             prj.proje_id = (int)dataGridView1.CurrentRow.Cells["proje_id"].Value;
             db.projeSil(prj);
+            mesaj = db.projeSil(prj);
+            if(mesaj == "Silindi")
+            {
+                MessageBox.Show("Projeniz başarıyla silindi");
+            }
+            else
+            {
+                MessageBox.Show("Proje silinirken bir sorun oluştu.");
+            }
+            
             
         }
 
